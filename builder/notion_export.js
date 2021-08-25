@@ -14,7 +14,7 @@ fetch("https://www.notion.so/api/v3/enqueueTask", {
     "accept-language": "en-US,en;q=0.9",
     "cache-control": "no-cache",
     "content-type": "application/json",
-    "notion-client-version": "23.2.3",
+    "notion-client-version": "23.9.2.9",
     pragma: "no-cache",
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
@@ -24,8 +24,7 @@ fetch("https://www.notion.so/api/v3/enqueueTask", {
   },
   referrer: pageURL,
   referrerPolicy: "same-origin",
-  body:
-    '{"task":{"eventName":"exportBlock","request":{"blockId":"10dd8a95-4ca5-4e9c-aa15-1d71b611e949","recursive":false,"exportOptions":{"exportType":"html","timeZone":"America/New_York","locale":"en"}}}}',
+  body: "{\"task\":{\"eventName\":\"exportBlock\",\"request\":{\"blockId\":\"03187d07-2d63-44ea-b9a7-d065e1f9ae2d\",\"recursive\":false,\"exportOptions\":{\"exportType\":\"html\",\"timeZone\":\"America/New_York\",\"locale\":\"en\"}}}}",
   method: "POST",
   mode: "cors"
 }).then(response => {
